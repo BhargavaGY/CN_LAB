@@ -48,9 +48,7 @@ void encodeData(string data, string key)
 {
 	int l_key = key.length();
 	
-	string appended_data = (data +
-							std::string(
-								l_key - 1, '0'));
+	string appended_data = (data +std::string(l_key - 1, '0'));
 	
 	string remainder = mod2div(appended_data, key);
 	
